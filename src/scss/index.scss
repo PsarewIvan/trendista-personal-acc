@@ -1,0 +1,61 @@
+@use 'reset';
+@use 'fonts';
+@use 'vars';
+
+@use './components/header.scss';
+@use './components/footer.scss';
+@use './components/button.scss';
+@use './components/accordion.scss';
+@use './components/text-input.scss';
+@use './components/text-area.scss';
+@use './components/select.scss';
+
+// @use './pages/index.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: vars.$main-font;
+    color: vars.$text-primary;
+    background-color: vars.$background-secondary;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 320px;
+    padding: 48px 64px;
+
+    @include vars.tablet {
+        margin-left: 0;
+        margin-top: 72px;
+        padding: 24px;
+    }
+
+    @include vars.mobile {
+        padding: 16px;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.transparent {
+    opacity: 0 !important;
+}
+
+.body-lock {
+    overflow: hidden;
+}
