@@ -1,0 +1,125 @@
+@use '../vars.scss';
+
+.filter {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.main-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.main-table-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 16px;
+    border-radius: 2px;
+    background-color: vars.$background-primary;
+
+    &_full-width {
+        grid-column: span 2;
+    }
+
+    &__title-wrapper {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 120fr 176fr;
+        gap: 24px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__block-title {
+        font-size: 14px;
+        line-height: 20px;
+
+        &_warning {
+            color: vars.$red-600;
+        }
+    }
+
+    &__block-text {
+        display: flex;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        text-wrap: nowrap;
+
+        &_up {
+            color: vars.$green-500;
+        }
+    }
+
+    &__caret {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        align-self: center;
+        margin-right: 2px;
+
+        &_up {
+            color: vars.$green-500;
+        }
+    }
+
+    &__tag {
+        height: 20px;
+        margin-left: 8px;
+        align-self: center;
+        display: flex;
+        padding: 0 2px 0 4px;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+
+        &_up {
+            background-color: vars.$green-100;
+            color: vars.$green-600;
+        }
+
+        &_down {
+            background-color: vars.$red-100;
+            color: vars.$red-600;
+        }
+
+        &_neutral {
+            background-color: vars.$darkner-8;
+            color: vars.$text-secondary;
+        }
+
+        .main-table-card__caret {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__week {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+}

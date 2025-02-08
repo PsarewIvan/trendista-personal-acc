@@ -11,7 +11,7 @@
 @use './components/text-area.scss';
 @use './components/select.scss';
 
-// @use './pages/index.scss';
+@use './pages/index.scss';
 
 * {
     box-sizing: border-box;
@@ -50,6 +50,24 @@ body {
     @include vars.mobile {
         padding: 16px;
     }
+}
+
+.content {
+    max-width: 720px;
+}
+
+.title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.sub-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
 }
 
 .hidden {

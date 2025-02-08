@@ -1,6 +1,6 @@
 include ../icons/icon-cross.pug
 
-mixin select({elements, placeholder, label, className, hasReset=false})
+mixin select({elements, placeholder, label, className, hasReset=false, disabled})
     .select-component-wrapper.js-select-component-wrapper
         if label
             .select-component__label= label

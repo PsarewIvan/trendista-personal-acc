@@ -76,7 +76,519 @@
             </svg><span class="header-button__text">Выйти</span>
       </button>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <h1 class="title">Мои отчёты</h1>
+      <div class="filter">
+            <div class="select-component-wrapper js-select-component-wrapper">
+              <select class="select-component js-select-component filter__month">
+                <option class="select-component__option" value="Январь">Январь</option>
+                <option class="select-component__option" value="Февраль">Февраль</option>
+                <option class="select-component__option" value="Март">Март</option>
+                <option class="select-component__option" value="Апрель">Апрель</option>
+                <option class="select-component__option" value="Май">Май</option>
+                <option class="select-component__option" value="Июнь">Июль</option>
+                <option class="select-component__option" value="Август">Август</option>
+                <option class="select-component__option" value="Сентябрь">Сентябрь</option>
+                <option class="select-component__option" value="Октябрь">Октябрь</option>
+                <option class="select-component__option" value="Ноябрь">Ноябрь</option>
+                <option class="select-component__option" value="Декабрь">Декабрь</option>
+              </select>
+            </div>
+            <div class="select-component-wrapper js-select-component-wrapper">
+              <select class="select-component js-select-component filter__rate">
+                <option class="select-component__option" value="Сравнить с прошлым годом">Сравнить с прошлым годом</option>
+                <option class="select-component__option" value="Сравнить с позапрошлым годом">Сравнить с позапрошлым годом</option>
+              </select>
+            </div>
+            <div class="select-component-wrapper js-select-component-wrapper">
+              <select class="select-component js-select-component filter__country">
+                <option class="select-component__option" value="Россия">Россия</option>
+                <option class="select-component__option" value="Китай">Китай</option>
+              </select>
+            </div>
+            <div class="select-component-wrapper js-select-component-wrapper">
+              <select class="select-component js-select-component filter__city">
+                <option class="select-component__option" value="Москва">Москва</option>
+                <option class="select-component__option" value="Казань">Казань</option>
+              </select>
+            </div>
+            <button class="button m primary filter__apply" type="button">Показать
+            </button>
+      </div>
+      <h2 class="sub-title">Декабрь 2024 к декабрю 2023</h2>
+      <div class="content">
+        <div class="main-table">
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/MoneyWavy.svg">
+              <div class="main-table-card__title">Общая выручка</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Все салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>13,52%</span></div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Мой салон</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>20,58%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/Wallet.svg">
+              <div class="main-table-card__title">Средний чек за визит</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">2 994,90 ₽</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">3 516,77 ₽
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>17,43%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card main-table-card_full-width">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/CalendarDays.svg">
+              <div class="main-table-card__title">Процент дохода по дням недели</div>
+            </div>
+            <div class="main-table-card__week">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Пн</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">13,83%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Вт</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text"> 13,11%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Ср</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">12,42%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Чт</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">12,87%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Пт</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">13,62%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title main-table-card__block-title_warning">Сб</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">15,75%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title main-table-card__block-title_warning">Вс</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">18,39%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/Clock.svg">
+              <div class="main-table-card__title">Среднее полезное время</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">53%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text"> <span>53%</span>
+                    <div class="main-table-card__tag main-table-card__tag_neutral"><span>0,00%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/Percent.svg">
+              <div class="main-table-card__title">Соотношение услуг и продаж по выручке</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">97%</div>
+                  <div class="main-table-card__block-text">97%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">96,81%
+                    <div class="main-table-card__tag main-table-card__tag_down"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretDown.svg"><span>0,19%</span></div>
+                  </div>
+                  <div class="main-table-card__block-text">3,19%
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>0,19%</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-text"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/UsersThree.svg">
+              <div class="main-table-card__title">Общее количество визитов</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Все салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>0,31%</span></div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Мой салон</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>0,09%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/Scissors.svg">
+              <div class="main-table-card__title">Выручка по услугам</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Все салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>13,7%</span></div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Мой салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>16,23%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/Basket.svg">
+              <div class="main-table-card__title">Количество продаж</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Все салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>30,67%</span></div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Мой салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>42,01%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/ShoppingCart.svg">
+              <div class="main-table-card__title">Выручкам по продажам</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Все салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>21,01%</span></div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Мой салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>28,16%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/Coins.svg">
+              <div class="main-table-card__title">Салоны использующие предоплату</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">2,03%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">2,83%
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>0,8%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/Certificate.svg">
+              <div class="main-table-card__title">Салоны использующие сертификаты</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">30,67%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">37,71%
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>7,04%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/ListBullets.svg">
+              <div class="main-table-card__title">Количество записей</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Все салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_down"><img class="main-table-card__caret main-table-card__caret_down" src="img/CaretDown.svg"><span>0,73%</span></div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Мой салоны</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text main-table-card__block-text_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>0,28%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/ChartPieSlice.svg">
+              <div class="main-table-card__title">Соотношение записей по телефону и записей онлайн</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">67,48%</div>
+                  <div class="main-table-card__block-text">32,52%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">63,25%
+                    <div class="main-table-card__tag main-table-card__tag_down"><img class="main-table-card__caret main-table-card__caret_down" src="img/CaretDown.svg"><span>4,23%</span></div>
+                  </div>
+                  <div class="main-table-card__block-text">36,75%
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>4,23%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/ListBulletsCanceled.svg">
+              <div class="main-table-card__title">Процент отмененных от общего количества записей</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">27,18%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">26,03%
+                    <div class="main-table-card__tag main-table-card__tag_down"><img class="main-table-card__caret main-table-card__caret_down" src="img/CaretDown.svg"><span>1,15%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/ListChecksCanceled.svg">
+              <div class="main-table-card__title">Процент отмененных от количества подтвержденных записей</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">11,06%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">9,55%
+                    <div class="main-table-card__tag main-table-card__tag_down"><img class="main-table-card__caret main-table-card__caret_down" src="img/CaretDown.svg"><span>1,51%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/ListDashesCanceled.svg">
+              <div class="main-table-card__title">Процент отмененных от количества неподтвержденных записей</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">31,86%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">32,21%
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>0,35%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/UserCircle.svg">
+              <div class="main-table-card__title">Процент новых от общего количества клиентов</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">15,09%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">11,83%
+                    <div class="main-table-card__tag main-table-card__tag_down"><img class="main-table-card__caret main-table-card__caret_down" src="img/CaretDown.svg"><span>3,26%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/NumberCircleOne.svg">
+              <div class="main-table-card__title">Процент клиентов, сделавших одну услугу за визит</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">69,44%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">70,94%
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>1,5%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/NumberCircleTwo.svg">
+              <div class="main-table-card__title">Процент клиентов, сделавших две услуги за визит</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">18,54%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">18,55%
+                    <div class="main-table-card__tag main-table-card__tag_up"><img class="main-table-card__caret main-table-card__caret_up" src="img/CaretUp.svg"><span>0,01%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/NumberCircleThree.svg">
+              <div class="main-table-card__title">Процент клиентов, сделавших три услуги за визит</div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">6,62%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">6,48%
+                    <div class="main-table-card__tag main-table-card__tag_down"><img class="main-table-card__caret main-table-card__caret_down" src="img/CaretDown.svg"><span>0,14%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-table-card">
+            <div class="main-table-card__title-wrapper"><img class="main-table-card__icon" src="img/NumberCircleFour.svg">
+              <div class="main-table-card__title"></div>
+            </div>
+            <div class="main-table-card__content">
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2023</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">3,81%</div>
+                </div>
+              </div>
+              <div class="main-table-card__block">
+                <div class="main-table-card__block-title">Декабрь 2024</div>
+                <div class="main-table-card__block-content">
+                  <div class="main-table-card__block-text">3,31%
+                    <div class="main-table-card__tag main-table-card__tag_down"><img class="main-table-card__caret main-table-card__caret_down" src="img/CaretDown.svg"><span>0,5%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
       <ul class="nav__list">
         <li class="nav-element nav-element_active"><a class="nav-element__link" href="./">
