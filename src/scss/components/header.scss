@@ -8,6 +8,7 @@
     bottom: 0;
     display: flex;
     flex-direction: column;
+    gap: 48px;
     width: 320px;
     padding: 24px 32px;
     background-color: vars.$background-primary;
@@ -19,5 +20,105 @@
         display: grid;
         grid-template-columns: 1fr 48px;
         padding: 8px 16px;
+    }
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include vars.tablet {
+        gap: 0;
+        margin-top: 4px;
+    }
+}
+
+.title-logo {
+    display: flex;
+    gap: 8px;
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__text-icon {
+        width: 157px;
+        height: 32px;
+    }
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.status {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    &_ok {
+        color: vars.$green-600;
+    }
+
+    &_warning {
+        color: vars.$yellow-700;
+    }
+
+    &_error {
+        color: vars.$red-600;
+    }
+}
+
+.header-button {
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+    outline: none;
+    padding: 16px 24px 16px 8px;
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    @include vars.tablet {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        margin-bottom: auto;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: vars.$background-secondary;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        color: vars.$text-secondary;
+
+        @include vars.tablet {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &__text {
+        @include vars.tablet {
+            display: none;
+        }
     }
 }

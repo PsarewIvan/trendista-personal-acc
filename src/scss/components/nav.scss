@@ -1,0 +1,78 @@
+@use '../vars.scss';
+
+.nav {
+    overflow: auto;
+    margin-bottom: 48px;
+
+    @include vars.tablet {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        @include vars.tablet {
+            width: 100%;
+            flex-direction: row;
+        }
+    }
+}
+
+.nav-element {
+    transition: background-color 0.2s;
+
+    @include vars.tablet {
+        flex: 1;
+    }
+
+    &:hover {
+        background-color: vars.$background-secondary;
+    }
+
+    &_active {
+        background-color: vars.$background-secondary;
+
+        @include vars.tablet {
+            background-color: transparent;
+        }
+
+        .nav-element__icon {
+            color: vars.$text-primary;
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        color: vars.$text-secondary;
+        transition: color 0.2s;
+    }
+
+    &__link {
+        display: flex;
+        gap: 8px;
+        padding: 16px 24px 16px 8px;
+        border-radius: 2px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        transition: color 0.2s;
+
+        @include vars.tablet {
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            padding: 12px 8px 8px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+        }
+    }
+}

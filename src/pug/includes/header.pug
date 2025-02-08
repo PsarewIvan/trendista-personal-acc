@@ -1,4 +1,34 @@
 block header
-    //- include ../components/button.pug
+    include ../icons/icon-logo.pug
+    include ../icons/icon-logo-text.pug
+    include ../icons/icon-exit.pug
+    include ../icons/icon-nav-index.pug
+    include ../icons/icon-nav-profile.pug
+    include ../icons/icon-nav-support.pug
 
     header.header
+        .title-wrapper
+            .title-logo
+                +icon-logo('title-logo__icon')
+                +icon-logo-text('title-logo__text-icon')
+            .actions
+                .status.status_ok Подписка до 28.02.2026
+                .status.status_warning.hidden Подписка до 28.02.2026
+                .status.status_error.hidden Подписка до 28.02.2026
+        nav.nav
+            ul.nav__list
+                li.nav-element(class=page === 'index' ? 'nav-element_active' : '')
+                    a.nav-element__link(href='./')
+                        +icon-nav-index('nav-element__icon')
+                        span Мои отчёты
+                li.nav-element(class=page === 'profile' ? 'nav-element_active' : '')
+                    a.nav-element__link(href='./profile.html')
+                        +icon-nav-profile('nav-element__icon')
+                        span Профиль
+                li.nav-element(class=page === 'support' ? 'nav-element_active' : '')
+                    a.nav-element__link(href='./support.html')
+                        +icon-nav-support('nav-element__icon')
+                        span Поддержка
+        button.header-button
+            +icon-exit('header-button__icon')
+            span.header-button__text Выйти

@@ -1,5 +1,12 @@
 @use '../vars.scss';
 
 .footer {
-    //
+    display: none;
+    margin-top: auto;
+    padding: 0 8px;
+
+    @include vars.tablet {
+        display: flex;
+        background-color: vars.$background-primary;
+    }
 }

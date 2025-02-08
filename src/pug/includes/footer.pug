@@ -1,4 +1,19 @@
 block footer
-    //- include ../components/button.pug
+    include ../icons/icon-nav-index.pug
+    include ../icons/icon-nav-profile.pug
+    include ../icons/icon-nav-support.pug
 
     footer.footer
+        ul.nav__list
+            li.nav-element(class=page === 'index' ? 'nav-element_active' : '')
+                a.nav-element__link(href='./')
+                    +icon-nav-index('nav-element__icon')
+                    span Мои отчёты
+            li.nav-element(class=page === 'profile' ? 'nav-element_active' : '')
+                a.nav-element__link(href='./profile.html')
+                    +icon-nav-profile('nav-element__icon')
+                    span Профиль
+            li.nav-element(class=page === 'support' ? 'nav-element_active' : '')
+                a.nav-element__link(href='./support.html')
+                    +icon-nav-support('nav-element__icon')
+                    span Поддержка
