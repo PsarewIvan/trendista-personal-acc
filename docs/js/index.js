@@ -107,6 +107,29 @@ class ItcAccordion {
 })();
 
 (() => {
+    const filtersButton = document.querySelector('.js-filters-button');
+    const filters = document.querySelector('.js-filters');
+
+    toggleHiddenClass();
+
+    window.addEventListener('resize', toggleHiddenClass);
+
+    filtersButton?.addEventListener('click', () => {
+        filters.classList.toggle('hidden');
+    });
+
+    function toggleHiddenClass() {
+        if (!filters) return;
+
+        if (window.innerWidth < 768) {
+            filters.classList.add('hidden');
+        } else {
+            filters.classList.remove('hidden');
+        }
+    }
+})();
+
+(() => {
     const selectsWrapper = document.querySelectorAll(
         '.js-select-component-wrapper'
     );
@@ -116,8 +139,6 @@ class ItcAccordion {
         const placeholder = select?.dataset.placeholder;
         const options = select?.querySelectorAll('option');
         const reset = selectWrapper?.querySelector('.js-select-reset');
-
-        console.log(select.disabled);
 
         const dataOptions = Array.from(options).map((option) => ({
             text: option.innerHTML,

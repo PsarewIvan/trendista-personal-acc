@@ -1,18 +1,103 @@
 @use '../vars.scss';
 
+.main-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__settings-button {
+        display: none;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        @include vars.mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover,
+        &:focus {
+            outline: none;
+            background-color: vars.$darkner-8;
+        }
+    }
+
+    &__settings-icon {
+        width: 32px;
+        height: 32px;
+        color: vars.$text-secondary;
+    }
+}
+
 .filter {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+
+    @include vars.tablet {
+        padding-bottom: 16px;
+    }
+
+    @include vars.mobile {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        padding-bottom: 0;
+    }
+
+    &__block {
+        display: flex;
+        gap: 16px;
+        flex-wrap: nowrap;
+
+        @include vars.mobile {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 112fr 200fr;
+            grid-template-rows: auto auto;
+        }
+    }
+
+    &__month {
+        @include vars.mobile {
+            grid-row: 1;
+        }
+    }
+
+    &__apply {
+        @include vars.mobile {
+            grid-row: 1;
+        }
+    }
+
+    &__rate {
+        @include vars.mobile {
+            grid-column: span 2;
+        }
+    }
 }
 
 .main-table {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+
+    @include vars.mobile {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .main-table-card {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -22,6 +107,10 @@
 
     &_full-width {
         grid-column: span 2;
+
+        @include vars.mobile {
+            grid-column: auto;
+        }
     }
 
     &__title-wrapper {
@@ -44,6 +133,10 @@
         display: grid;
         grid-template-columns: 120fr 176fr;
         gap: 24px;
+
+        @include vars.mobile {
+            grid-template-columns: 44% 56%;
+        }
     }
 
     &__block {
@@ -121,5 +214,10 @@
         display: flex;
         justify-content: space-between;
         gap: 24px;
+
+        @include vars.mobile {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }

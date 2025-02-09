@@ -9,8 +9,6 @@
         const options = select?.querySelectorAll('option');
         const reset = selectWrapper?.querySelector('.js-select-reset');
 
-        console.log(select.disabled);
-
         const dataOptions = Array.from(options).map((option) => ({
             text: option.innerHTML,
             value: option.value,
