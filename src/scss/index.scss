@@ -12,6 +12,7 @@
 @use './components/select.scss';
 
 @use './pages/index.scss';
+@use './pages/profile.scss';
 
 * {
     box-sizing: border-box;
@@ -65,10 +66,24 @@ body {
 }
 
 .sub-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     margin: 0;
     font-size: 20px;
     font-weight: 700;
     line-height: 32px;
+
+    &__label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: vars.$link-600;
 }
 
 .hidden {

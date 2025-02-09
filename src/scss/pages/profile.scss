@@ -1,0 +1,136 @@
+@use '../vars.scss';
+
+.user-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.user-subscribe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 16px;
+    border-radius: 2px;
+    background-color: vars.$background-primary;
+
+    &_error {
+        background-color: vars.$red-100;
+    }
+
+    &__title-block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    &__sub-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__content-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &_ok {
+            .user-subscribe__status-text {
+                color: vars.$green-600;
+            }
+        }
+
+        &_warning {
+            .user-subscribe__status-text {
+                color: vars.$yellow-700;
+            }
+        }
+
+        &_error {
+            .user-subscribe__status-text {
+                color: vars.$red-600;
+            }
+        }
+    }
+
+    &__status-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 1;
+    }
+
+    &__status-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 16px;
+    border-radius: 2px;
+    background-color: vars.$background-primary;
+
+    &__title-block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 24px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    &__sub-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__price-block {
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+        margin-top: auto;
+    }
+
+    &__price {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    &__price-label {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+}
+
+.plans-description {
+    font-size: 14px;
+    line-height: 20px;
+}

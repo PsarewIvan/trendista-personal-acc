@@ -1,0 +1,69 @@
+extends ../layout.pug
+
+block variables
+  - var page = 'profile'
+
+block content
+    include ../components/button.pug
+    include ../components/select.pug
+    include ../icons/icon-settings.pug
+
+    main.main
+        .main-title
+            h1.title Профиль
+        h2.sub-title Моя подписка
+        .content
+            .user-subscribe
+                .user-subscribe-card
+                    .user-subscribe-card__title-block
+                        .user-subscribe-card__title Тренды рынка + мой салон
+                        .user-subscribe-card__sub-title Sonline ID:
+                            span 951823671
+                    .user-subscribe-card__content-block
+                        .user-subscribe-card__status.user-subscribe-card__status_ok
+                            img.user-subscribe-card__status-icon(src="img/CheckCircle.svg")
+                            .user-subscribe-card__status-text Действует до 28.02.2026
+                        +button({text: 'Продлить за 3500 ₽', theme: 'secondary'})
+                .user-subscribe-card
+                    .user-subscribe-card__title-block
+                        .user-subscribe-card__title Тренды рынка + мой салон
+                        .user-subscribe-card__sub-title Sonline ID:
+                            span 951823671
+                    .user-subscribe-card__content-block
+                        .user-subscribe-card__status.user-subscribe-card__status_warning
+                            img.user-subscribe-card__status-icon(src="img/Warning.svg")
+                            .user-subscribe-card__status-text Действует до 28.02.2026
+                        +button({text: 'Продлить за 3500 ₽', theme: 'secondary'})
+                .user-subscribe-card.user-subscribe-card_error
+                    .user-subscribe-card__title-block
+                        .user-subscribe-card__title Тренды рынка + мой салон
+                        .user-subscribe-card__sub-title Sonline ID:
+                            span 951823671
+                    .user-subscribe-card__content-block
+                        .user-subscribe-card__status.user-subscribe-card__status_error
+                            img.user-subscribe-card__status-icon(src="img/XCircle.svg")
+                            .user-subscribe-card__status-text Срок подписки истек
+                        +button({text: 'Продлить за 3500 ₽', theme: 'secondary'})
+        h2.sub-title Тарифы
+            .sub-title__label Вы можете сэкономить 10%, при оплате подписки на два года
+        .content
+            .plans
+                .plan-card
+                    .plan-card__title-block
+                        .plan-card__title Тренды рынка
+                        .plan-card__sub-title Статистический анализ данных более 3000 действующих салонов России
+                    .plan-card__price-block
+                        .plan-card__price 2500₽
+                        .plan-card__price-label в год
+                    +button({text: 'Оформить подписку'})
+                .plan-card
+                    .plan-card__title-block
+                        .plan-card__title Тренды рынка + мой салон*
+                        .plan-card__sub-title Статистический анализ данных более 3000 действующих салонов России с показателями вашего бизнеса
+                    .plan-card__price-block
+                        .plan-card__price 3500₽
+                        .plan-card__price-label в год
+                    +button({text: 'Оформить подписку'})
+        .content
+            .plans-description * На текущий момент сравнение показателей вашего салона с рынком доступно только при использовании CRM-систем Sonline или Yclients. По всем техническим вопросам вы можете обратиться в 
+                a(href="/") службу поддержки
