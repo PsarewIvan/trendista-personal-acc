@@ -6,6 +6,7 @@
     .select-component {
         position: relative;
         // max-width: 240px;
+        min-width: 124px;
         padding: 0 8px 0 12px;
         height: 48px;
         display: flex;
@@ -35,6 +36,21 @@
 
             .select-component__label {
                 // color: #006fbc;
+            }
+        }
+
+        &.ss-disabled {
+            border-color: vars.$darkner-4;
+            background-color: vars.$darkner-4;
+
+            .ss-values {
+                color: vars.$text-secondary;
+            }
+
+            .ss-arrow {
+                path {
+                    fill: vars.$text-secondary;
+                }
             }
         }
 

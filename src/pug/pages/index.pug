@@ -12,8 +12,8 @@ block content
         .filter
             +select({elements: [{value: 'Январь', text: 'Январь'},{value: 'Февраль', text: 'Февраль'},{value: 'Март', text: 'Март'},{value: 'Апрель', text: 'Апрель'},{value: 'Май', text: 'Май'},{value: 'Июнь', text: 'Июль'},{value: 'Август', text: 'Август'},{value: 'Сентябрь', text: 'Сентябрь'},{value: 'Октябрь', text: 'Октябрь'},{value: 'Ноябрь', text: 'Ноябрь'},{value: 'Декабрь', text: 'Декабрь'}], className: 'filter__month'})
             +select({elements: [{value: 'Сравнить с прошлым годом', text: 'Сравнить с прошлым годом'},{value: 'Сравнить с позапрошлым годом', text: 'Сравнить с позапрошлым годом'}], className: 'filter__rate'})
-            +select({elements: [{value: 'Россия', text: 'Россия'},{value: 'Китай', text: 'Китай'}], className: 'filter__country', disabled})
-            +select({elements: [{value: 'Москва', text: 'Москва'},{value: 'Казань', text: 'Казань'}], className: 'filter__city', disabled})
+            +select({elements: [{value: 'Россия', text: 'Россия'},{value: 'Китай', text: 'Китай'}], className: 'filter__country', disabled: 'true'})
+            +select({elements: [{value: 'Москва', text: 'Москва'},{value: 'Казань', text: 'Казань'}], className: 'filter__city'})
             +button({text: 'Показать', className: 'filter__apply'})
         h2.sub-title Декабрь 2024 к декабрю 2023
         .content

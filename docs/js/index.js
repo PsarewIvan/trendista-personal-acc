@@ -117,6 +117,8 @@ class ItcAccordion {
         const options = select?.querySelectorAll('option');
         const reset = selectWrapper?.querySelector('.js-select-reset');
 
+        console.log(select.disabled);
+
         const dataOptions = Array.from(options).map((option) => ({
             text: option.innerHTML,
             value: option.value,
@@ -138,7 +140,7 @@ class ItcAccordion {
                     const value = evt?.[0]?.value;
 
                     if (value) {
-                        reset.classList.remove('hidden');
+                        reset?.classList.remove('hidden');
                     }
                 },
             },
@@ -159,10 +161,10 @@ class ItcAccordion {
         select?.addEventListener('change', (event) => {
             if (dataOptions.some(({ value }) => value === event.target.value)) {
                 selectDiv.classList.add('select-component_selected');
-                arrow?.classList.add('transparent');
+                // arrow?.classList.add('transparent');
             } else {
                 selectDiv.classList.remove('select-component_selected');
-                arrow?.classList.remove('transparent');
+                // arrow?.classList.remove('transparent');
             }
         });
     });
