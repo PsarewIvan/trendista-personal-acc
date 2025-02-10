@@ -53,7 +53,7 @@ body {
 
     @include vars.mobile {
         gap: 16px;
-        padding: 16px;
+        padding: 16px 16px 78px;
     }
 }
 

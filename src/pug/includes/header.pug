@@ -3,8 +3,11 @@ block header
     include ../icons/icon-logo-text.pug
     include ../icons/icon-exit.pug
     include ../icons/icon-nav-index.pug
+    include ../icons/icon-nav-index-active.pug
     include ../icons/icon-nav-profile.pug
+    include ../icons/icon-nav-profile-active.pug
     include ../icons/icon-nav-support.pug
+    include ../icons/icon-nav-support-active.pug
 
     header.header.js-header
         .title-wrapper
@@ -19,15 +22,24 @@ block header
             ul.nav__list
                 li.nav-element(class=page === 'index' ? 'nav-element_active' : '')
                     a.nav-element__link(href='./')
-                        +icon-nav-index('nav-element__icon')
+                        if page === 'index'
+                            +icon-nav-index-active('nav-element__icon')
+                        if page !== 'index'
+                            +icon-nav-index('nav-element__icon')
                         span Мои отчёты
                 li.nav-element(class=page === 'profile' ? 'nav-element_active' : '')
                     a.nav-element__link(href='./profile.html')
-                        +icon-nav-profile('nav-element__icon')
+                        if page === 'profile'
+                            +icon-nav-profile-active('nav-element__icon')
+                        if page !== 'profile'
+                            +icon-nav-profile('nav-element__icon')
                         span Профиль
                 li.nav-element(class=page === 'support' ? 'nav-element_active' : '')
                     a.nav-element__link(href='./support.html')
-                        +icon-nav-support('nav-element__icon')
+                        if page === 'support'
+                            +icon-nav-support-active('nav-element__icon')
+                        if page !== 'support'
+                            +icon-nav-support('nav-element__icon')
                         span Поддержка
         button.header-button
             +icon-exit('header-button__icon')
