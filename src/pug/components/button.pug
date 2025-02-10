@@ -2,3 +2,8 @@ mixin button({text, size='m', theme='primary', className='', disabled=false})
     - var classes = size + ' ' + theme + ' ' + className;
     button.button(type="button" disabled=disabled class=classes)
         = text
+
+mixin button-link({text, size='m', theme='primary', className='', disabled=false, href='/'})
+    - var classes = size + ' ' + theme + ' ' + className;
+    a.button(disabled=disabled class=classes, href=href)
+        = text

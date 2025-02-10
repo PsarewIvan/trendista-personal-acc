@@ -23,7 +23,7 @@ block content
                         .user-subscribe-card__status.user-subscribe-card__status_ok
                             img.user-subscribe-card__status-icon(src="img/CheckCircle.svg")
                             .user-subscribe-card__status-text Действует до 28.02.2026
-                        +button({text: 'Продлить за 3500 ₽', theme: 'secondary'})
+                        +button-link({text: 'Продлить за 3500 ₽', theme: 'secondary', href:'/payment'})
                 .user-subscribe-card
                     .user-subscribe-card__title-block
                         .user-subscribe-card__title Тренды рынка + мой салон
@@ -33,7 +33,7 @@ block content
                         .user-subscribe-card__status.user-subscribe-card__status_warning
                             img.user-subscribe-card__status-icon(src="img/Warning.svg")
                             .user-subscribe-card__status-text Действует до 28.02.2026
-                        +button({text: 'Продлить за 3500 ₽', theme: 'secondary'})
+                        +button-link({text: 'Продлить за 3500 ₽', theme: 'secondary', href:'/payment'})
                 .user-subscribe-card.user-subscribe-card_error
                     .user-subscribe-card__title-block
                         .user-subscribe-card__title Тренды рынка + мой салон
@@ -43,7 +43,7 @@ block content
                         .user-subscribe-card__status.user-subscribe-card__status_error
                             img.user-subscribe-card__status-icon(src="img/XCircle.svg")
                             .user-subscribe-card__status-text Срок подписки истек
-                        +button({text: 'Продлить за 3500 ₽', theme: 'secondary'})
+                        +button-link({text: 'Продлить за 3500 ₽', theme: 'secondary', href:'/payment'})
         h2.sub-title Тарифы
             .sub-title__label Вы можете сэкономить 10%, при оплате подписки на два года
         .content
@@ -55,7 +55,7 @@ block content
                     .plan-card__price-block
                         .plan-card__price 2500₽
                         .plan-card__price-label в год
-                    +button({text: 'Оформить подписку'})
+                    +button-link({text: 'Оформить подписку', href:'/payment'})
                 .plan-card
                     .plan-card__title-block
                         .plan-card__title Тренды рынка + мой салон*
@@ -63,7 +63,7 @@ block content
                     .plan-card__price-block
                         .plan-card__price 3500₽
                         .plan-card__price-label в год
-                    +button({text: 'Оформить подписку'})
+                    +button-link({text: 'Оформить подписку', href:'/payment'})
         .content
             .plans-description * На текущий момент сравнение показателей вашего салона с рынком доступно только при использовании CRM-систем Sonline или Yclients. По всем техническим вопросам вы можете обратиться в 
                 a(href="/") службу поддержки
