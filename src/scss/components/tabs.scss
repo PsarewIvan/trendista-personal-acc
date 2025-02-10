@@ -1,0 +1,39 @@
+@use '../vars.scss';
+
+.tabs {
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2px;
+    border: 2px solid vars.$darkner-16;
+
+    @include vars.mobile {
+        // margin-left: 0;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 36px;
+        margin: 0;
+        padding: 0 16px;
+        border: none;
+        border-radius: 2px;
+        background-color: transparent;
+        color: vars.$text-secondary;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            color: vars.$text-primary;
+        }
+
+        &.active {
+            background-color: vars.$text-third;
+            color: vars.$text-primary-invert;
+        }
+    }
+}

@@ -56,9 +56,9 @@
 
         &__label {
             margin-bottom: 4px;
-            color: #5c5c5c;
-            font-size: 12px;
-            line-height: 16px;
+            color: vars.$text-secondary;
+            font-size: 14px;
+            line-height: 20px;
         }
 
         &__reset {

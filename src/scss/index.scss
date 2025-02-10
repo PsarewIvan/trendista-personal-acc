@@ -10,9 +10,11 @@
 @use './components/text-input.scss';
 @use './components/text-area.scss';
 @use './components/select.scss';
+@use './components/tabs.scss';
 
 @use './pages/index.scss';
 @use './pages/profile.scss';
+@use './pages/payment.scss';
 
 * {
     box-sizing: border-box;

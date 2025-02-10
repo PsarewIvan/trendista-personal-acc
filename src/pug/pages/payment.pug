@@ -1,0 +1,36 @@
+extends ../layout.pug
+
+block variables
+  - var page = 'payment'
+
+block content
+    include ../components/button.pug
+    include ../components/select.pug
+    include ../components/text-input.pug
+    include ../icons/icon-settings.pug
+
+    main.main
+        .main-title
+            h1.title Оплата
+        .payment
+            .payment__inputs
+                +select({elements: [{value: 'Тренды рынка + мой салон', text: 'Тренды рынка + мой салон'},{value: 'Тренды рынка', text: 'Тренды рынка'}], label: 'Подписка'})
+                .payment__block
+                    +select({elements: [{placeholder: 'Выберите', value: 'CRM 1', text: 'CRM 1'},{value: 'CRM 2', text: 'CRM 2'}], label: 'CRM-система*', hasReset: 'true'})
+                    +text-input({label: 'ID салона'})
+                .payment__tabs.js-tabs
+                    .tabs
+                        button.tabs__button.active.js-tab-button(type='button' data-id='first') На 1 год
+                        button.tabs__button.js-tab-button(type='button' data-id='second') На 2 года
+                    .payment__price-block
+                        .payment__price-title К оплате
+                        .js-tab-price(data-id='first')
+                            .payment__price
+                                span.payment__price-second 7000₽
+                        .js-tab-price.hidden(data-id='second')
+                            .payment__price
+                                span.payment__price-first 7000₽
+                                span.payment__price-second 6300 ₽
+            +button({text: 'Оплатить'})
+            .payment__description * На текущий момент сравнение показателей вашего салона с рынком доступно только при использовании CRM-систем Sonline или Yclients. По всем техническим вопросам вы можете обратиться в 
+                a(href="/") службу поддержки

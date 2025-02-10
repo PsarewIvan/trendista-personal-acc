@@ -1,0 +1,66 @@
+@use '../vars.scss';
+
+.payment {
+    max-width: 432px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__block {
+        display: grid;
+        grid-template-columns: 160fr 256fr;
+        gap: 16px;
+    }
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__price-block {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__price-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__price {
+        display: flex;
+        gap: 16px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    &__price-first {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: -2px;
+            right: -2px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 1px;
+            border: 1px solid vars.$background-secondary;
+            background-color: vars.$red-500;
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
