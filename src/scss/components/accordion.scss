@@ -6,7 +6,7 @@
     gap: 2px;
 
     &__item {
-        padding: 32px;
+        padding: 16px;
         border-radius: 2px;
 
         &:nth-child(5n + 1) {
@@ -24,72 +24,55 @@
         &:nth-child(5n + 5) {
             background-color: #f8aaa7;
         }
-
-        @include vars.mobile {
-            padding: 24px;
-        }
-
-        @include vars.mobile {
-            padding: 16px;
-        }
     }
 
     &__header {
         display: flex;
         justify-content: space-between;
         gap: 32px;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 32px;
         cursor: pointer;
         transition: all 0.2s;
-
-        @include vars.mobile {
-            gap: 16px;
-            font-size: 16px;
-            line-height: 24px;
-        }
     }
 
     &__header-text {
+        align-self: center;
         display: flex;
         align-items: baseline;
         gap: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
     }
 
     &__item-number {
+        // line-height: 40px;
+
         @include vars.mobile {
             display: none;
         }
     }
 
+    &__item-text {
+        // align-self: center;
+    }
+
     &__header-icon-wrapper {
         align-self: center;
         flex-shrink: 0;
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 2px;
         transition: all 0.2s;
-
-        @include vars.mobile {
-            width: 40px;
-            height: 40px;
-        }
     }
 
     &__icon {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         color: vars.$text-primary;
         transition: all 0.2s;
-
-        @include vars.mobile {
-            width: 24px;
-            height: 24px;
-        }
 
         &_minus {
             display: none;

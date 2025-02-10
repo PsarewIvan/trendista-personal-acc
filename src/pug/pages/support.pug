@@ -1,0 +1,79 @@
+extends ../layout.pug
+
+block variables
+  - var page = 'support'
+
+block content
+    include ../components/button.pug
+    include ../components/select.pug
+    include ../components/text-area.pug
+    include ../icons/icon-settings.pug
+    include ../icons/icon-plus.pug
+    include ../icons/icon-minus.pug
+
+    main.main
+        .main-title
+            h1.title Сообщение в техподдержку
+        .support__form
+            +text-area({label: 'Текст сообщения'})
+            div
+                +button({text: 'Отправить'})
+        .content
+            .support__success-block
+                .support__success-title Ваше сообщение отправлено
+                .support__success-text Мы постараемся решить ваш вопрос в кратчайшие сроки. Служба поддержки ответит вам на адрес электронной почты: 
+                    a(href="/") mymail@mail.ru.
+        h2.sub-title Часто задаваемые вопросы
+        .support__accordion
+            .accordion.js-accordion
+                .accordion__item
+                    .accordion__header.js-accordion-header
+                        span.accordion__header-text
+                            span.accordion__item-number 1.
+                            span.accordion__item-text Как мне изменить CRM и/или ID моего салона?
+                        .accordion__header-icon-wrapper
+                            +icon-plus('accordion__icon accordion__icon_plus')
+                            +icon-minus('accordion__icon accordion__icon_minus')
+                    .accordion__body
+                        .accordion__content Напишите в техподдержку, указав новые данные CRM и ID. Мы внесём изменения в течение 3-х дней. Обратите внимание, что в течение годовой подписки вы можете менять данные салона не более 2-х раз.
+                .accordion__item
+                    .accordion__header.js-accordion-header
+                        span.accordion__header-text
+                            span.accordion__item-number 2.
+                            span.accordion__item-text У меня сеть салонов. Как добавить несколько салонов в один аккаунт?
+                        .accordion__header-icon-wrapper
+                            +icon-plus('accordion__icon accordion__icon_plus')
+                            +icon-minus('accordion__icon accordion__icon_minus')
+                    .accordion__body
+                        .accordion__content Напишите в техподдержку, указав новые данные CRM и ID. Мы внесём изменения в течение 3-х дней. Обратите внимание, что в течение годовой подписки вы можете менять данные салона не более 2-х раз.
+                .accordion__item
+                    .accordion__header.js-accordion-header
+                        span.accordion__header-text
+                            span.accordion__item-number 3.
+                            span.accordion__item-text Почему мои данные отличаются от рыночных показателей?
+                        .accordion__header-icon-wrapper
+                            +icon-plus('accordion__icon accordion__icon_plus')
+                            +icon-minus('accordion__icon accordion__icon_minus')
+                    .accordion__body
+                        .accordion__content Напишите в техподдержку, указав новые данные CRM и ID. Мы внесём изменения в течение 3-х дней. Обратите внимание, что в течение годовой подписки вы можете менять данные салона не более 2-х раз.
+                .accordion__item
+                    .accordion__header.js-accordion-header
+                        span.accordion__header-text
+                            span.accordion__item-number 4.
+                            span.accordion__item-text Как часто обновляются статистические данные в сервисе?
+                        .accordion__header-icon-wrapper
+                            +icon-plus('accordion__icon accordion__icon_plus')
+                            +icon-minus('accordion__icon accordion__icon_minus')
+                    .accordion__body
+                        .accordion__content Напишите в техподдержку, указав новые данные CRM и ID. Мы внесём изменения в течение 3-х дней. Обратите внимание, что в течение годовой подписки вы можете менять данные салона не более 2-х раз.
+                .accordion__item
+                    .accordion__header.js-accordion-header
+                        span.accordion__header-text
+                            span.accordion__item-number 5.
+                            span.accordion__item-text Почему я не могу посмотреть статистику за текущий месяц?
+                        .accordion__header-icon-wrapper
+                            +icon-plus('accordion__icon accordion__icon_plus')
+                            +icon-minus('accordion__icon accordion__icon_minus')
+                    .accordion__body
+                        .accordion__content Напишите в техподдержку, указав новые данные CRM и ID. Мы внесём изменения в течение 3-х дней. Обратите внимание, что в течение годовой подписки вы можете менять данные салона не более 2-х раз.
+

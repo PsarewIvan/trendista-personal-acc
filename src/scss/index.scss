@@ -15,6 +15,7 @@
 @use './pages/index.scss';
 @use './pages/profile.scss';
 @use './pages/payment.scss';
+@use './pages/support.scss';
 
 * {
     box-sizing: border-box;
@@ -42,12 +43,12 @@ body {
     flex-direction: column;
     gap: 24px;
     margin-left: 320px;
-    padding: 48px 64px;
+    padding: 48px 64px 110px;
 
     @include vars.tablet {
         margin-left: 0;
         margin-top: 72px;
-        padding: 24px;
+        padding: 24px 24px 86px;
     }
 
     @include vars.mobile {

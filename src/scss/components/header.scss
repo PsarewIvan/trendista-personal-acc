@@ -1,5 +1,9 @@
 @use '../vars.scss';
 
+.header-hide {
+    transform: translateY(-100%);
+}
+
 .header {
     position: fixed;
     z-index: 900;
@@ -12,6 +16,7 @@
     width: 320px;
     padding: 24px 32px;
     background-color: vars.$background-primary;
+    transition: transform 0.3s ease-in-out;
 
     @include vars.tablet {
         right: 0;
