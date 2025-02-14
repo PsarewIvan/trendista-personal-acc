@@ -158,15 +158,21 @@
         display: grid;
         grid-template-columns: min-content auto;
         grid-template-rows: auto auto;
-        // display: flex;
         font-size: 20px;
         font-weight: 500;
         line-height: 32px;
-        // text-wrap: wrap;
 
         &_up {
             color: vars.$green-500;
         }
+
+        &_down {
+            color: vars.$red-600;
+        }
+    }
+
+    &__text-price {
+        text-wrap: nowrap;
     }
 
     &__sub-text {
@@ -185,6 +191,10 @@
 
         &_up {
             color: vars.$green-500;
+        }
+
+        &_down {
+            color: vars.$red-600;
         }
     }
 
