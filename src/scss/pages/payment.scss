@@ -13,13 +13,9 @@
     }
 
     &__block {
-        display: grid;
-        grid-template-columns: 160fr 256fr;
+        display: flex;
+        flex-direction: column;
         gap: 16px;
-
-        @include vars.mobile {
-            grid-template-columns: 1fr 148px;
-        }
     }
 
     &__tabs {

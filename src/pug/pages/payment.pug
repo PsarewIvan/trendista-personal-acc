@@ -17,7 +17,7 @@ block content
                 +select({elements: [{value: 'Тренды рынка + мой салон', text: 'Тренды рынка + мой салон'},{value: 'Тренды рынка', text: 'Тренды рынка'}], label: 'Подписка'})
                 .payment__block
                     +select({elements: [{placeholder: 'Выберите', value: 'CRM 1', text: 'CRM 1'},{value: 'CRM 2', text: 'CRM 2'}], label: 'CRM-система*'})
-                    +text-input({label: 'ID салона'})
+                    +text-input({label: 'Уникальный ключ', placeholder: 'Вставьте свой ключ', subText: 'Уникальный ключ салона можно получить в системе Sonline: зайдите в раздел "Руководителю", откройте подраздел "Тренды" и нажмите кнопку "Копировать уникальный ключ" вверху страницы'})
                 .payment__tabs.js-tabs
                     .tabs
                         button.tabs__button.active.js-tab-button(type='button' data-id='first') На 1 год
