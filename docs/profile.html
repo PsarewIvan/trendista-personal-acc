@@ -48,10 +48,13 @@
                 </g>
               </svg>
         </div>
-        <div class="actions">
-          <div class="status status_ok">Подписка до 28.02.2026</div>
-          <div class="status status_warning hidden">Подписка до 28.02.2026</div>
-          <div class="status status_error hidden">Подписка до 28.02.2026</div>
+        <div class="header__content">
+          <div class="header__email">my.superlong.email@company.ru</div>
+          <div class="actions">
+            <div class="status status_ok">Подписка до 28.02.2026</div>
+            <div class="status status_warning hidden">Подписка до 28.02.2026</div>
+            <div class="status status_error hidden">Подписка до 28.02.2026</div>
+          </div>
         </div>
       </div>
       <nav class="nav">
@@ -77,8 +80,9 @@
       </button>
     </header>
     <main class="main">
-      <div class="main-title">
+      <div class="profile-title">
         <h1 class="title">Профиль</h1>
+        <div class="profile-title__subtitle">my.superlong.email@company.ru</div>
       </div>
       <h2 class="sub-title">Моя подписка</h2>
       <div class="content">
@@ -113,9 +117,34 @@
             <div class="user-subscribe-card__content-block">
               <div class="user-subscribe-card__status user-subscribe-card__status_error"><img class="user-subscribe-card__status-icon" src="img/XCircle.svg">
                 <div class="user-subscribe-card__status-text">Срок подписки истек</div>
-              </div><a class="button m secondary " href="/payment">Продлить за 3500 ₽</a>
+              </div><a class="button m secondary " href="/payment">Оформить за 3500 ₽</a>
             </div>
           </div>
+        </div>
+      </div>
+      <h2 class="sub-title">Бонусный счёт</h2>
+      <div class="content">
+        <div class="price-card">
+          <div class="price-card__header">
+            <div class="price-card__header-top">
+              <div class="price-card__price">
+                <div class="price-card__price-number">2000</div><img class="price-card__icon" src="img/beautycoin.svg">
+              </div>
+              <div class="price-card__info">
+                <div class="price-card__info-text">Beautycoin ID:</div>
+                <div class="price-card__id">0000 0000 0000 0000</div>
+              </div>
+            </div>
+            <div class="price-card__rate">1 beautycoin = 1 рубль</div>
+          </div>
+          <div class="price-card__content">
+            <div class="price-card__content-text">Бонусы Beautycoin начисляются автоматически за покупку любой подписки. Начисление производится на основании фактических платежей, без учёта скидок.</div>
+            <div class="price-card__content-text">Экономьте с каждой покупкой, оплачивайте до 50% стоимости подписки бьютикоинами. Подробнее о том, где ещё потратить бьютикоины смотрите на сайте <a class="price-card__link" href="https://beautycoin.ru/">https://beautycoin.ru/</a></div>
+            <div class="price-card__content-text">Хотите копить и тратить бонусы? Регистрируйтесь в Beautycoin.</div>
+          </div>
+          <div class="price-card__controls"><a class="button m secondary price-card__button" href="/">Регистрация</a>
+          </div>
+          <div class="price-card__footer">Уже есть аккаунт Beautycoin? <a class="price-card__link" href="#">Подключите интеграцию</a></div>
         </div>
       </div>
       <h2 class="sub-title">Тарифы

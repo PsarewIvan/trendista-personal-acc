@@ -9,8 +9,9 @@ block content
     include ../icons/icon-settings.pug
 
     main.main
-        .main-title
+        .profile-title
             h1.title Профиль
+            .profile-title__subtitle my.superlong.email@company.ru
         h2.sub-title Моя подписка
         .content
             .user-subscribe
@@ -43,7 +44,28 @@ block content
                         .user-subscribe-card__status.user-subscribe-card__status_error
                             img.user-subscribe-card__status-icon(src="img/XCircle.svg")
                             .user-subscribe-card__status-text Срок подписки истек
-                        +button-link({text: 'Продлить за 3500 ₽', theme: 'secondary', href:'/payment'})
+                        +button-link({text: 'Оформить за 3500 ₽', theme: 'secondary', href:'/payment'})
+        h2.sub-title Бонусный счёт
+        .content
+            .price-card
+                .price-card__header
+                    .price-card__header-top
+                        .price-card__price
+                            .price-card__price-number 2000
+                            img.price-card__icon(src='img/beautycoin.svg')
+                        .price-card__info
+                            .price-card__info-text Beautycoin ID:
+                            .price-card__id 0000 0000 0000 0000
+                    .price-card__rate 1 beautycoin = 1 рубль
+                .price-card__content
+                    .price-card__content-text Бонусы Beautycoin начисляются автоматически за покупку любой подписки. Начисление производится на основании фактических платежей, без учёта скидок.
+                    .price-card__content-text Экономьте с каждой покупкой, оплачивайте до 50% стоимости подписки бьютикоинами. Подробнее о том, где ещё потратить бьютикоины смотрите на сайте 
+                        a.price-card__link(href="https://beautycoin.ru/") https://beautycoin.ru/
+                    .price-card__content-text Хотите копить и тратить бонусы? Регистрируйтесь в Beautycoin.
+                .price-card__controls
+                    +button-link({text: 'Регистрация', theme: 'secondary', className: 'price-card__button'})
+                .price-card__footer Уже есть аккаунт Beautycoin? 
+                    a.price-card__link(href="#") Подключите интеграцию
         h2.sub-title Тарифы
             .sub-title__label Вы можете сэкономить 10%, при оплате подписки на два года
         .content

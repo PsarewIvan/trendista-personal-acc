@@ -1,5 +1,17 @@
 @use '../vars.scss';
 
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
+
 .user-subscribe {
     display: flex;
     flex-direction: column;
@@ -80,6 +92,91 @@
     &__status-text {
         font-size: 16px;
         font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 16px;
+    border-radius: 2px;
+    background-color: vars.$background-primary;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include vars.mobile {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__price {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__rate {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__content-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__link {
+        font-size: inherit;
+        font-weight: inherit;
+        text-decoration: none;
+        color: vars.$link-600;
+    }
+
+    &__button {
+        width: fit-content;
+    }
+
+    &__footer {
+        font-size: 16px;
+        font-weight: 600;
         line-height: 24px;
     }
 }

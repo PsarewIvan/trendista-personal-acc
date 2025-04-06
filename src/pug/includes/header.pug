@@ -14,10 +14,12 @@ block header
             .title-logo
                 +icon-logo('title-logo__icon')
                 +icon-logo-text('title-logo__text-icon')
-            .actions
-                .status.status_ok Подписка до 28.02.2026
-                .status.status_warning.hidden Подписка до 28.02.2026
-                .status.status_error.hidden Подписка до 28.02.2026
+            .header__content
+                .header__email my.superlong.email@company.ru
+                .actions
+                    .status.status_ok Подписка до 28.02.2026
+                    .status.status_warning.hidden Подписка до 28.02.2026
+                    .status.status_error.hidden Подписка до 28.02.2026
         nav.nav
             ul.nav__list
                 li.nav-element(class=page === 'index' ? 'nav-element_active' : '')
