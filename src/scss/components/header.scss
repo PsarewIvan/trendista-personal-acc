@@ -106,6 +106,12 @@
     &_error {
         color: vars.$red-600;
     }
+
+    &_only-desktop {
+        @include vars.mobile {
+            display: none;
+        }
+    }
 }
 
 .header-button {

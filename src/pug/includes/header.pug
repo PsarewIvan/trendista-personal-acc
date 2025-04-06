@@ -17,9 +17,15 @@ block header
             .header__content
                 .header__email my.superlong.email@company.ru
                 .actions
-                    .status.status_ok Подписка до 28.02.2026
-                    .status.status_warning.hidden Подписка до 28.02.2026
-                    .status.status_error.hidden Подписка до 28.02.2026
+                    .status.status_ok
+                        span.status_only-desktop Подписка
+                        span  до 28.02.2026
+                    .status.status_warning.hidden
+                        span.status_only-desktop Подписка
+                        span  до 28.02.2026
+                    .status.status_error.hidden
+                        span.status_only-desktop Подписка
+                        span  до 28.02.2026
         nav.nav
             ul.nav__list
                 li.nav-element(class=page === 'index' ? 'nav-element_active' : '')
