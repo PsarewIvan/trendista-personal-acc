@@ -1,0 +1,19 @@
+extends ../layout.pug
+
+block variables
+  - var page = 'payment'
+
+block content
+    include ../components/button.pug
+    include ../components/select.pug
+    include ../components/text-input.pug
+    include ../icons/icon-settings.pug
+
+    main.main
+        .main-title
+            h1.title Подключение Beautycoin ID
+        .key-page__text Скопируйте уникальный ваш ключ и вставьте его в Личном кабинете Beautycoin
+        .key-page__controls
+            +button({text: 'Копировать уникальный ключ'})
+        .key-page__status
+            .key-page__status-copy Ключ скопирован

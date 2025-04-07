@@ -1,0 +1,28 @@
+@use '../vars.scss';
+
+.key-page {
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__status-copy {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        color: vars.$green-600;
+
+        &::before {
+            content: '';
+            position: relative;
+            display: flex;
+            width: 24px;
+            height: 24px;
+            background: url('../img/CheckCircle.svg') no-repeat center;
+            background-size: contain;
+        }
+    }
+}
