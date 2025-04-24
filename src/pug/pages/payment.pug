@@ -8,6 +8,7 @@ block content
     include ../components/select.pug
     include ../components/text-input.pug
     include ../icons/icon-settings.pug
+    include ../icons/icon-cross.pug
 
     main.main
         .main-title
@@ -22,6 +23,17 @@ block content
                     .tabs
                         button.tabs__button.active.js-tab-button(type='button' data-id='first') На 1 год
                         button.tabs__button.js-tab-button(type='button' data-id='second') На 2 года
+                    .payment-promo.js-promocode
+                        button.payment-promo__link.js-promocode-link(type='button') У меня есть промокод на скидку
+                        .payment-promo__block.hidden.js-promocode-block
+                            .payment-promo__header
+                                .payment-promo__title Промокод на скидку
+                                .payment-promo__text Введите ваш промокод в поле ниже и нажмите «Использовать», чтобы активировать скидку
+                            .payment-promo__footer
+                                +text-input({placeholder: 'Промокод', className: 'payment-promo__input', classNameInput:'js-promocode-input'})
+                                +button({text: 'Использовать'})
+                            button.payment-promo__close.js-promocode-close(type='button')
+                                +icon-cross('payment-promo__icon-cross')
                     .payment__price-block
                         .payment__price-title К оплате
                         .js-tab-price(data-id='first')

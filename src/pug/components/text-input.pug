@@ -1,8 +1,8 @@
 include ../icons/icon-cross.pug
 
-mixin text-input({label, size='m', alert, placeholder, value, className, subText, forceAlert})
+mixin text-input({label, size='m', alert, placeholder, value, className, subText, forceAlert, classNameInput=''})
     - var classes = size + ' ' + className;
-    - var inputForceClass = forceAlert ? 'text-input__input_force-alert' : ''
+    - var inputForceClass = (forceAlert ? 'text-input__input_force-alert' : '') + classNameInput
 
     .text-input.js-text-input-node(class=classes)
         if label

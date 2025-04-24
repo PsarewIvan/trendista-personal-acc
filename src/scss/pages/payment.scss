@@ -65,3 +65,99 @@
         padding-bottom: 16px;
     }
 }
+
+.payment-promo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__link {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        cursor: pointer;
+        color: vars.$link-600;
+        text-align: left;
+
+        &:hover {
+            // color: vars.$link-500;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 20px 16px;
+        border-radius: 2px;
+        background-color: vars.$background-primary;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__footer {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr max-content;
+    }
+
+    &__close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 2px;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: vars.$darkner-8;
+        }
+    }
+
+    &__input {
+        width: 208px;
+    }
+
+    &__icon-cross {
+        width: 32px;
+        height: 32px;
+        color: vars.$text-primary;
+    }
+}

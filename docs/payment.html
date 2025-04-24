@@ -118,6 +118,34 @@
               <button class="tabs__button active js-tab-button" type="button" data-id="first">На 1 год</button>
               <button class="tabs__button js-tab-button" type="button" data-id="second">На 2 года</button>
             </div>
+            <div class="payment-promo js-promocode">
+              <button class="payment-promo__link js-promocode-link" type="button">У меня есть промокод на скидку</button>
+              <div class="payment-promo__block hidden js-promocode-block">
+                <div class="payment-promo__header">
+                  <div class="payment-promo__title">Промокод на скидку</div>
+                  <div class="payment-promo__text">Введите ваш промокод в поле ниже и нажмите «Использовать», чтобы активировать скидку</div>
+                </div>
+                <div class="payment-promo__footer">
+                      <div class="text-input js-text-input-node m payment-promo__input">
+                        <div class="text-input__input-wrapper">
+                          <input class="text-input__input js-text-input js-promocode-input" type="text" placeholder="Промокод">
+                          <button class="text-input__reset js-text-input-reset" type="button">
+                                <svg class="text-input__icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                  <path d="M13.0303 4.03033C13.3232 3.73744 13.3232 3.26256 13.0303 2.96967C12.7374 2.67678 12.2626 2.67678 11.9697 2.96967L8 6.93934L4.03033 2.96967C3.73744 2.67678 3.26256 2.67678 2.96967 2.96967C2.67678 3.26256 2.67678 3.73744 2.96967 4.03033L6.93934 8L2.96967 11.9697C2.67678 12.2626 2.67678 12.7374 2.96967 13.0303C3.26256 13.3232 3.73744 13.3232 4.03033 13.0303L8 9.06066L11.9697 13.0303C12.2626 13.3232 12.7374 13.3232 13.0303 13.0303C13.3232 12.7374 13.3232 12.2626 13.0303 11.9697L9.06066 8L13.0303 4.03033Z" fill="currentColor"></path>
+                                </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <button class="button m primary " type="button">Использовать
+                      </button>
+                </div>
+                <button class="payment-promo__close js-promocode-close" type="button">
+                      <svg class="payment-promo__icon-cross" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.0303 4.03033C13.3232 3.73744 13.3232 3.26256 13.0303 2.96967C12.7374 2.67678 12.2626 2.67678 11.9697 2.96967L8 6.93934L4.03033 2.96967C3.73744 2.67678 3.26256 2.67678 2.96967 2.96967C2.67678 3.26256 2.67678 3.73744 2.96967 4.03033L6.93934 8L2.96967 11.9697C2.67678 12.2626 2.67678 12.7374 2.96967 13.0303C3.26256 13.3232 3.73744 13.3232 4.03033 13.0303L8 9.06066L11.9697 13.0303C12.2626 13.3232 12.7374 13.3232 13.0303 13.0303C13.3232 12.7374 13.3232 12.2626 13.0303 11.9697L9.06066 8L13.0303 4.03033Z" fill="currentColor"></path>
+                      </svg>
+                </button>
+              </div>
+            </div>
             <div class="payment__price-block">
               <div class="payment__price-title">К оплате</div>
               <div class="js-tab-price" data-id="first">
