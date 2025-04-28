@@ -7,8 +7,6 @@
         const close = promo.querySelector('.js-promocode-close');
         const input = promo.querySelector('.js-promocode-input');
 
-        console.log(input);
-
         button?.addEventListener('click', () => {
             button?.classList.add('hidden');
             block.classList.remove('hidden');
